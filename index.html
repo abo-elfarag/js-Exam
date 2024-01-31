@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body class="bg-black">
+    
+    <div class="side-navbar vh-100 position-fixed text-white d-flex">
+        <div class="navbar-tab d-flex flex-column justify-content-between h-100 pb-4 bg-black">
+            <div class="tabs">
+                <ul class="ps-4">
+                    <li id="search" role="button">Search</a></li>
+                    <li id="category" role="button">Categories</li>
+                    <li id="area" role="button">Area</li>
+                    <li id="ingredients" role="button">Ingredients</li>
+                    <li id="contact" role="button">Contact Us</li>
+                </ul>
+            </div>
+            <div class="footer ps-3">
+                <div class="social-icon">
+                    <i class="fa-brands fa-facebook" role="button"></i>
+                    <i class="fa-brands fa-twitter" role="button"></i>
+                    <i class="fa-solid fa-globe" role="button"></i>
+                </div>
+                <p>Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+        </div>
+        <div class="navbar-header bg-white h-100 d-flex flex-column align-items-center justify-content-between pb-4">
+            <div class="logo w-75">
+                <img src="./imgs/logo.png" alt="" class="w-100">
+            </div>
+            <div class="open-close position-relative text-black">
+                <div class="open-icon" role="button">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="close-icon" role="button">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="share-icon d-flex flex-column ">
+                <i class="fa-solid fa-globe" role="button"></i>
+                <i class="fa-solid fa-share-nodes" role="button"></i>
+            </div>
+        </div>
+    </div>
+
+    <section class="search ">
+        <div class="container justify-content-center py-5">
+            <div class=" d-flex justify-content-center mb-5">
+                <input  type="text" placeholder="Search By Name..." class="form-control bg-black" id="inputSearchName">
+                <input maxlength="1" type="text" placeholder="Search By First Letter..." class="form-control bg-black" id="inputSearchletter">
+            </div>
+            <div class="row gy-4" id="rowSearch">
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="main">
+        <div class="container p-5">
+            <div class="row gy-4" id="dataRow">
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container p-5">
+            <div class="row gy-4 py-5" id="rowCategory">
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="area">
+        <div class="container">
+            <div class="row gy-4 py-5" id="rowArea">
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="ingredients">
+        <div class="container">
+            <div class="row py-5 gy-4" id="rowIngredients">
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="d-flex justify-content-center align-items-center vh-100">
+            <div class="container d-flex justify-content-center">
+                <div class="w-75">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Enter Your Name" class="w-100 form-control" id="inputFirstName">
+                            <p class="text-center w-100 py-3 rounded-3 bg-danger-subtle mt-2">Special characters and numbers not allowed</p>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Enter Your Email" class="w-100 form-control" id="inputEmail">
+                            <p class="text-center w-100 py-3 rounded-3 bg-danger-subtle mt-2">Special characters and numbers not allowed</p>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Enter Your phone" class="w-100 form-control" id="inputPhone">
+                            <p class="text-center w-100 py-3 rounded-3 bg-danger-subtle mt-2">Special characters and numbers not allowed</p>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" placeholder="Enter Your age" class="w-100 form-control" max="100">
+                            <p class="text-center w-100 py-3 rounded-3 bg-danger-subtle mt-2">Special characters and numbers not allowed</p>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" placeholder="Enter Your password" class="w-100 form-control" id="inputPassword">
+                            <p class="text-center w-100 py-3 rounded-3 bg-danger-subtle mt-2">Special characters and numbers not allowed</p>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" placeholder="Enter Repassword" class="w-100 form-control" id="inputRepassword">
+                            <p class="text-center w-100 py-3 rounded-3 bg-danger-subtle mt-2">Special characters and numbers not allowed</p>
+                        </div>
+                        <button disabled type="" class=" btn btn-outline-danger" id="submitBtu">
+                            submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="details main-bg pt-5 overflow-scroll pb-5">
+        <div class="header">
+            <div class="ms-auto text-white close-btn">
+                <i class="fa-solid fa-xmark ms-auto" id="close" role="button"></i>
+            </div>
+        </div>
+        <div class="container" id="dataDetails">
+            
+        </div>
+    </section>
+
+    <section id="loader">
+        <i class="fa-solid fa-spinner fa-spin"></i>
+    </section>
+
+    <section id="loader2">
+        <i class="fa-solid fa-spinner fa-spin"></i>
+    </section>
+
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
